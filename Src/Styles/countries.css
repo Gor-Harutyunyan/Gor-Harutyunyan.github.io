@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgb(39, 37, 37);
+  padding: 0 30px;
+  height: 60px;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+.searchbar {
+  position: relative;
+}
+
+.searchbar input[type="text"] {
+  border: 0;
+  padding: 0 10px;
+  width: 250px;
+  height: 35px;
+  border-radius: 3px;
+}
+
+.countries-body {
+  background-image: url(../Images/bg.jpg);
+  min-height: 100vh;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.countries {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.countries h2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.countries .country-card {
+  position: relative;
+  max-width: 300px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.countries .country-card:hover {
+  height: 350px;
+}
+
+.countries .country-card .flag {
+  position: relative;
+  width: 260px;
+  height: 280px;
+
+  z-index: 1;
+}
+
+.countries .country-card .flag img {
+  max-width: 260px;
+  max-height: 200px;
+  border-radius: 4px;
+}
+
+.countries .country-card .content {
+  position: relative;
+  font-size: 15px;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.countries .country-card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -10px;
+  transition-delay: 0.3s;
+}
+
+.favorite {
+  font-size: 40px;
+  color: orange;
+  cursor: pointer;
+}
