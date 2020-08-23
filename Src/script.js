@@ -49,7 +49,7 @@ button.addEventListener("click", (e) => {
 function isLoginUser() {
   let isLogin = JSON.parse(localStorage.getItem("user")).isLogin;
   if (isLogin) {
-    window.location.href = "../Countries/countries.html";
+    window.location.href = "../countries.html";
   }
 }
 

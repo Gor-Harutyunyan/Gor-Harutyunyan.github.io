@@ -1,4 +1,4 @@
-import { debounce } from "../Helpers/debounce.js";
+import { debounce } from "./Helpers/debounce.js";
 
 const searchInput = document.querySelector(".search-input");
 const countries = document.querySelector(".countries");
